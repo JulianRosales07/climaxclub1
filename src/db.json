@@ -1,0 +1,283 @@
+[
+
+  {
+    "id": "prod1",
+    "name": "Ron Viejo de Caldas Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 95000,
+    "imageUrl": "https://exitocol.vtexassets.com/arquivos/ids/26655701/Ron-Viejo-De-Caldas-Botella-X-750ml-721457_a.jpg?v=638739777801400000",
+    "description": "Ron colombiano añejo con notas de caramelo y madera."
+  },
+  {
+    "id": "prod2",
+    "name": "Ron Viejo de Caldas Media",
+    "category": "Licores",
+    "quantity": null,
+    "price": 55000,
+    "imageUrl": "https://exitocol.vtexassets.com/arquivos/ids/26655702/Ron-Viejo-De-Caldas-X-375ml-721460_a.jpg?v=638739777859070000",
+    "description": "Media botella de ron colombiano añejo, ideal para compartir."
+  },
+  {
+    "id": "prod3",
+    "name": "Tequila Olmeca Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 110000,
+    "imageUrl": "https://media.falabella.com/falabellaCO/133607638_01/w=1500,h=1500,fit=pad",
+    "description": "Tequila mexicano suave, perfecto para shots o cócteles."
+  },
+  {
+    "id": "prod4",
+    "name": "Tequila Olmeca Media",
+    "category": "Licores",
+    "quantity": null,
+    "price": 75000,
+    "imageUrl": "https://exitocol.vtexassets.com/arquivos/ids/26655716/Tequila-Olmeca-Reposado-X-350-ml-32118_a.jpg?v=638739777997070000",
+    "description": "Media botella de tequila Olmeca, ideal para reuniones."
+  },
+  {
+    "id": "prod5",
+    "name": "Smirnoff Tamarindo Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 90000,
+    "imageUrl": "https://olimpica.vtexassets.com/arquivos/ids/1490699/7707096297583_0.jpg?v=638629791883000000",
+    "description": "es una fusión salvaje entre jugoso tamarindo y el picante de los chiles."
+  },
+  {
+    "id": "prod6",
+    "name": "Nariño Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 90000,
+    "imageUrl": "https://i0.wp.com/www.lairlandesalicores.com/wp-content/uploads/2024/02/narino-azul.jpg?fit=600%2C600&ssl=1",
+    "description": "Aguardiente tradicional de Nariño, fuerte y auténtico."
+  },
+  {
+    "id": "prod7",
+    "name": "Nariño Media",
+    "category": "Licores",
+    "quantity": null,
+    "price": 50000,
+    "imageUrl": "https://pharmacolombia.com/wp-content/uploads/2023/07/aguardiente-narino-edicion-especial-x-750-cm.jpg",
+    "description": "Media botella de aguardiente Nariño, perfecto para celebraciones."
+  },
+  {
+    "id": "prod8",
+    "name": "Molendero Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 75000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2OKxm0hurJn_eIqlkyyttuDm5hkZh3DE4Q&s",
+    "description": "Licor suave con sabores únicos, ideal para mezclar."
+  },
+  {
+    "id": "prod9",
+    "name": "Smirnoff Lulo Botella",
+    "category": "Licores",
+    "quantity": null,
+    "price": 75000,
+    "imageUrl": "https://olimpica.vtexassets.com/arquivos/ids/621593/7707096271682.jpg?v=637626531794370000",
+    "description": "Vodka con sabor a lulo, refrescante y tropical."
+  },
+  {
+    "id": "prod10",
+    "name": "Smirnoff Lulo Media",
+    "category": "Licores",
+    "quantity": null,
+    "price": 40000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0vmnHQwS9Jrdg-tUxAERSWutzd3-kUPrfqA&s",
+    "description": "Media botella de vodka Smirnoff con sabor a lulo."
+  },
+  {
+    "id": "prod11",
+    "name": "Pink Velvet",
+    "category": "Cócteles",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://images.cocktailwave.com/campari-tonic.png",
+    "description": "Cóctel dulce y cremoso con un toque afrutado."
+  },
+  {
+    "id": "prod12",
+    "name": "Red Velvet",
+    "category": "Cócteles",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Cóctel vibrante con sabores cítricos y azules."
+  },
+  {
+    "id": "prod13",
+    "name": "Green Velvet",
+    "category": "Cócteles",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://www.shutterstock.com/shutterstock/videos/3526647165/thumb/1.jpg?ip=x480",
+    "description": "Cóctel fresco con notas herbales y verdes."
+  },
+  {
+    "id": "prod14",
+    "name": "Mango Tequila",
+    "category": "Granizados",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://raw.githubusercontent.com/JulianRosales07/imagenes/refs/heads/main/IMG_0394.JPG",
+    "description": "Granizado de tequila con un toque de mango."
+  },
+  {
+    "id": "prod15",
+    "name": "Mora Azul",
+    "category": "Granizados",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://raw.githubusercontent.com/JulianRosales07/imagenes/refs/heads/main/IMG_0394.JPG",
+    "description": "Granizado de vodka + tequila acompañado de un toque de mora azul."
+  },
+  {
+    "id": "prod16",
+    "name": "Ojo de Diablo",
+    "category": "Granizados",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://raw.githubusercontent.com/JulianRosales07/imagenes/refs/heads/main/IMG_0394.JPG",
+    "description": "Granizado de champaña, granadina tequila y kola con apariencia de ojo de diablo."
+  },
+  {
+    "id": "prod17",
+    "name": "Tussi",
+    "category": "Granizados",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://raw.githubusercontent.com/JulianRosales07/imagenes/refs/heads/main/IMG_0394.JPG",
+    "description": "Whisky + champaña con un toque de saborizante color fucsia."
+  },
+  {
+    "id": "prod18",
+    "name": "Pecado",
+    "category": "Shots",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://example.com/fuego-inca-shot.jpg",
+    "description": "Shot de tequila con limon."
+  },
+
+  {
+    "id": "prod19",
+    "name": "Extasis",
+    "category": "Shots",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://example.com/aguila.jpg",
+    "description": "Shot de vodka con limon."
+  },
+  {
+    "id": "prod20",
+    "name": "Prohibido",
+    "category": "Shots",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://example.com/poker.jpg",
+    "description": "Shot de ginebra con limon."
+  },
+  {
+    "id": "prod21",
+    "name": "Club Colombia Dorada",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 7000,
+    "imageUrl": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/491966-800-800?v=638216692622100000&width=800&height=800&aspect=true",
+    "description": "Cerveza premium colombiana con sabor robusto."
+  },
+  {
+    "id": "prod22",
+    "name": "Corona",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://exitocol.vtexassets.com/arquivos/ids/25452246/Cerveza-Corona-Botella-CORONA-330-ml-3494042_a.jpg?v=638665918784630000",
+    "description": "Cerveza mexicana ligera, perfecta con limón."
+  },
+  {
+    "id": "prod23",
+    "name": "Budweiser",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 6000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf1dzjw0X8xd4_cyts86wBJ1cmmbGoK7D7Q&s",
+    "description": "Cerveza clásica y refrescante."
+  },
+  {
+    "id": "prod24",
+    "name": "Poker",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 6000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKDSPhltxcZitbYfRljC95B2pjIK6veSuLGA&s",
+    "description": "Cerveza suave y fresca."
+  },
+  {
+    "id": "prod25",
+    "name": "coronita",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 7000,
+    "imageUrl": "https://carulla.vtexassets.com/arquivos/ids/18491132/Cerveza-Botella-Coronita-CORONA-210-ml-1663469_a.jpg?v=638666692948400000",
+    "description": "Cerveza mexicana con sabor único."
+  },
+  {
+    "id": "prod26",
+    "name": "Amarillo",
+    "category": "Licores",
+    "quantity": null,
+    "price": 90000,
+    "imageUrl": "https://exitocol.vteximg.com.br/arquivos/ids/24496652/AGUARDIENTE-AMARILLO-MANZANARE-CRISTAL-750-Mililitro-3003709_a.jpg",
+    "description": "Aguardiente De manzanares sin azúcar botella (750 ml)"
+  },
+  {
+    "id": "prod27",
+    "name": "Botella de Agua",
+    "category": "Bebidas",
+    "quantity": null,
+    "price": 5000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlgofIWkJdUtexksKSlnS3g56D-WdI49q9w&s",
+    "description": "El agua con causa."
+  },
+  {
+    "id": "prod28",
+    "name": "Gatorade",
+    "category": "Bebidas",
+    "quantity": null,
+    "price": 6000,
+    "imageUrl": "https://cdn1.totalcommerce.cloud/mercacentro/product-zoom/es/gatorade-frutas-tropicales-500-ml-pet-1.webp",
+    "description": "Gatorade con frutas tropicales."
+  },
+  {
+    "id": "prod29",
+    "name": "Hervidos",
+    "category": "Hervidos",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FXPMNK4HH5-2DTY1Gxdp26-tkPNPAWtMDw&s",
+    "description": "Bebidas artesanales con sabor único, solo los miercoes."
+  },
+  {
+    "id": "prod30",
+    "name": "Hervidos 2 x 1",
+    "category": "Hervidos",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FXPMNK4HH5-2DTY1Gxdp26-tkPNPAWtMDw&s",
+    "description": "Bebidas artesanales con sabor único, solo los miercoes."
+  },
+  {
+    "id": "prod31",
+    "name": "promo budweiser",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 12000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf1dzjw0X8xd4_cyts86wBJ1cmmbGoK7D7Q&s",
+    "description": "3 cervezas de budweiser solo los dias anunciados."
+  }
+]
