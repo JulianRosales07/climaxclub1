@@ -11,8 +11,10 @@ interface ReportsTabProps {
 }
 
 export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
-  const { products, sales, loadProducts, loadSales, addReport, resetSales } = useStore();
+  const { products, sales, loadProducts, loadSales, addReport, resetSales, deleteSale } = useStore();
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<string | null>(null);
+
+  const paidSales = sales.filter(sale => sale.status === 'paid');
 
   const getProductName = (productId: string) => {
     return products.find((p) => p.id === productId)?.name ?? 'Producto eliminado';
@@ -22,8 +24,8 @@ export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
     return products.find((p) => p.id === productId)?.category ?? 'N/A';
   };
 
-  const totalSales = sales.reduce((acc, sale) => acc + sale.totalPrice, 0);
-  const totalSalesByMethod = sales.reduce(
+  const totalSales = paidSales.reduce((acc, sale) => acc + sale.totalPrice, 0);
+  const totalSalesByMethod = paidSales.reduce(
     (acc, sale) => {
       acc[sale.paymentMethod] = (acc[sale.paymentMethod] || 0) + sale.totalPrice;
       return acc;
@@ -31,7 +33,7 @@ export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
     { efectivo: 0, nequi: 0, datafono: 0 } as Record<string, number>
   );
 
-  const todaysSales = sales.filter(sale => {
+  const todaysSales = paidSales.filter(sale => {
     const saleDate = new Date(sale.date);
     const today = new Date();
     return saleDate.toDateString() === today.toDateString();
@@ -57,14 +59,15 @@ export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
 
   const handleCloseSales = async () => {
     try {
-      if (sales.length === 0) {
-        toast.error('No hay ventas para generar el reporte');
+      if (todaysSales.length === 0) {
+        toast.error('No hay ventas pagadas para generar el reporte');
         return;
       }
 
       const newReport = {
+        id: crypto.randomUUID(),
         date: new Date().toISOString(),
-        sales: sales.map(sale => ({
+        sales: todaysSales.map(sale => ({
           ...sale,
           totalPrice: Number(sale.totalPrice),
           quantity: Number(sale.quantity)
@@ -78,8 +81,8 @@ export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
       };
 
       await addReport(newReport);
-      await resetSales(); // Reset sales after generating report
-      await loadSales(); // Reload sales to reflect the reset
+      await resetSales();
+      await loadSales();
       await loadProducts();
       
       toast.success('Ventas del día cerradas exitosamente');
@@ -89,23 +92,34 @@ export const ReportsTab: React.FC<ReportsTabProps> = ({ canModify }) => {
     }
   };
 
+  const handleDeleteSale = async (saleId: string) => {
+    try {
+      await deleteSale(saleId);
+      toast.success('Venta eliminada exitosamente');
+    } catch (error) {
+      console.error('Error deleting sale:', error);
+      toast.error('Error al eliminar la venta');
+    }
+  };
+
   const salesByMethod = useMemo(() => ({
-    efectivo: sales.filter(sale => sale.paymentMethod === 'efectivo'),
-    nequi: sales.filter(sale => sale.paymentMethod === 'nequi'),
-    datafono: sales.filter(sale => sale.paymentMethod === 'datafono'),
-  }), [sales]);
+    efectivo: paidSales.filter(sale => sale.paymentMethod === 'efectivo'),
+    nequi: paidSales.filter(sale => sale.paymentMethod === 'nequi'),
+    datafono: paidSales.filter(sale => sale.paymentMethod === 'datafono'),
+  }), [paidSales]);
 
   return (
     <div className="container mx-auto px-4 py-6 space-y-6">
       <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
         <DailySummary
-          sales={sales}
+          sales={paidSales}
           totalSales={totalSales}
           totalSalesByMethod={totalSalesByMethod}
           getProductName={getProductName}
           getProductCategory={getProductCategory}
           handleCloseSales={canModify ? handleCloseSales : undefined}
           todaysTopProducts={todaysTopProducts}
+          onDeleteSale={handleDeleteSale}
         />
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">

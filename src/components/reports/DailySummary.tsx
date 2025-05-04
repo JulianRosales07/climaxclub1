@@ -6,7 +6,6 @@ import * as XLSX from 'xlsx';
 import { Sale } from '../../types';
 import { SalesSummaryPreview } from './SalesSummaryPreview';
 import { SalesClosurePreview } from './SalesClosurePreview';
-import { ReconciliationData } from './CashReconciliation';
 
 interface DailySummaryProps {
   sales: Sale[];
@@ -14,8 +13,9 @@ interface DailySummaryProps {
   totalSalesByMethod: Record<string, number>;
   getProductName: (id: string) => string;
   getProductCategory: (id: string) => string;
-  handleCloseSales: ((data: ReconciliationData) => Promise<void>) | undefined;
+  handleCloseSales: (() => Promise<void>) | undefined;
   todaysTopProducts: Array<{ productId: string; quantity: number; totalSales: number; }>;
+  onDeleteSale: (saleId: string) => void;
 }
 
 export const DailySummary: React.FC<DailySummaryProps> = ({
@@ -26,6 +26,7 @@ export const DailySummary: React.FC<DailySummaryProps> = ({
   getProductCategory,
   handleCloseSales,
   todaysTopProducts,
+  onDeleteSale,
 }) => {
   const [showPreview, setShowPreview] = useState(false);
   const [showClosurePreview, setShowClosurePreview] = useState(false);
@@ -95,6 +96,7 @@ export const DailySummary: React.FC<DailySummaryProps> = ({
         getProductName={getProductName}
         getProductCategory={getProductCategory}
         todaysTopProducts={todaysTopProducts}
+        onDeleteSale={onDeleteSale}
       />
 
       {handleCloseSales && (

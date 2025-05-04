@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, FileDown } from 'lucide-react';
+import { X, FileDown, Trash2 } from 'lucide-react';
 import { formatDate, formatCurrency } from '../../utils/formatters';
 import { Sale } from '../../types';
 import toast from 'react-hot-toast';
@@ -14,6 +14,7 @@ interface SalesSummaryPreviewProps {
   getProductName: (id: string) => string;
   getProductCategory: (id: string) => string;
   todaysTopProducts: Array<{ productId: string; quantity: number; totalSales: number; }>;
+  onDeleteSale: (saleId: string) => void;
 }
 
 export const SalesSummaryPreview: React.FC<SalesSummaryPreviewProps> = ({
@@ -26,6 +27,7 @@ export const SalesSummaryPreview: React.FC<SalesSummaryPreviewProps> = ({
   getProductName,
   getProductCategory,
   todaysTopProducts,
+  onDeleteSale,
 }) => {
   if (!isOpen) return null;
 
@@ -119,6 +121,9 @@ export const SalesSummaryPreview: React.FC<SalesSummaryPreviewProps> = ({
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Total
                     </th>
+                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Acciones
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
@@ -141,6 +146,14 @@ export const SalesSummaryPreview: React.FC<SalesSummaryPreviewProps> = ({
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                         {formatCurrency(sale.totalPrice)}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <button
+                          onClick={() => onDeleteSale(sale.id)}
+                          className="text-red-600 hover:text-red-900"
+                        >
+                          <Trash2 size={18} />
+                        </button>
                       </td>
                     </tr>
                   ))}

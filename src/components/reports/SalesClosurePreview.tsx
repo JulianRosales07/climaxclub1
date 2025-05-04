@@ -3,13 +3,12 @@ import { X, Check, AlertTriangle } from 'lucide-react';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Sale } from '../../types';
-import { ReconciliationData } from './CashReconciliation';
 import { formatCurrency } from '../../utils/formatters';
 
 interface SalesClosurePreviewProps {
   isOpen: boolean;
   onClose: () => void;
-  onConfirm: (data: ReconciliationData) => Promise<void>;
+  onConfirm: () => Promise<void>;
   sales: Sale[];
   totalSales: number;
   totalSalesByMethod: Record<string, number>;
@@ -25,7 +24,6 @@ export const SalesClosurePreview: React.FC<SalesClosurePreviewProps> = ({
   totalSalesByMethod,
   getProductName,
 }) => {
-  const [actualCash, setActualCash] = useState('');
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,19 +32,9 @@ export const SalesClosurePreview: React.FC<SalesClosurePreviewProps> = ({
   const handleConfirm = async () => {
     if (isSubmitting) return;
 
-    const reconciliationData: ReconciliationData = {
-      expectedCash: totalSalesByMethod.efectivo || 0,
-      actualCash: Number(actualCash) || 0,
-      difference: (Number(actualCash) || 0) - (totalSalesByMethod.efectivo || 0),
-      nequiTotal: totalSalesByMethod.nequi || 0,
-      cardTotal: totalSalesByMethod.datafono || 0,
-      notes: notes.trim() || undefined,
-      timestamp: new Date().toISOString(),
-    };
-
     try {
       setIsSubmitting(true);
-      await onConfirm(reconciliationData);
+      await onConfirm();
       onClose();
     } catch (error) {
       console.error('Error al cerrar las ventas:', error);
@@ -97,19 +85,6 @@ export const SalesClosurePreview: React.FC<SalesClosurePreviewProps> = ({
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Efectivo Real en Caja
-              </label>
-              <input
-                type="number"
-                value={actualCash}
-                onChange={(e) => setActualCash(e.target.value)}
-                className="w-full rounded-md border border-gray-300 shadow-sm p-2"
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
                 Notas
               </label>
               <textarea
@@ -127,7 +102,7 @@ export const SalesClosurePreview: React.FC<SalesClosurePreviewProps> = ({
                 Al cerrar las ventas del día:
               </p>
               <ul className="text-sm mt-2 space-y-1 list-disc list-inside">
-                <li>Se generará un reporte con todas las ventas del día</li>
+                <li>Se generará un reporte con todas las ventas pagadas del día</li>
                 <li>Las ventas actuales se archivarán</li>
                 <li>Se iniciará un nuevo día de ventas</li>
               </ul>
