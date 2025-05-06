@@ -283,11 +283,11 @@
   },
   {
     "id": "prod12",
-    "name": "Promo de cocteles",
+    "name": "Promo de cocteles 2 x 1",
     "category": "Cócteles",
     "quantity": null,
     "price": 8000,
     "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
-    "description": "Promo de cocteles. solo los dias anunciados."
+    "description": "Promo de cocteles 2 x 1. solo los dias anunciados."
   }
 ]
