@@ -117,6 +117,7 @@
     "imageUrl": "https://www.shutterstock.com/shutterstock/videos/3526647165/thumb/1.jpg?ip=x480",
     "description": "Cóctel fresco con notas herbales y verdes."
   },
+  
   {
     "id": "prod14",
     "name": "Mango Tequila",
@@ -279,5 +280,14 @@
     "price": 12000,
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf1dzjw0X8xd4_cyts86wBJ1cmmbGoK7D7Q&s",
     "description": "3 cervezas de budweiser solo los dias anunciados."
+  },
+  {
+    "id": "prod12",
+    "name": "Promo de cocteles",
+    "category": "Cócteles",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Promo de cocteles. solo los dias anunciados."
   }
 ]
