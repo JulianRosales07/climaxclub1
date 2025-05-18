@@ -289,5 +289,50 @@
     "price": 8000,
     "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
     "description": "Promo de cocteles 2 x 1. solo los dias anunciados."
+  },
+  {
+    "id": "prod33",
+    "name": "Michelada bud",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Michelada de budweiser con sabor a limon."
+  },
+  {
+    "id": "prod34",
+    "name": "Michelada club",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Michelada de club colombia con sabor a limon."
+  },
+  {
+    "id": "prod35",
+    "name": "Michelada poker",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Michelada de poker con sabor a limon."
+  },
+  {
+    "id": "prod36",
+    "name": "Michelada corona",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Michelada de corona con sabor a limon."
+  },
+  {
+    "id": "prod37",
+    "name": "Michelada coronita",
+    "category": "Cervezas",
+    "quantity": null,
+    "price": 8000,
+    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "description": "Michelada de coronita con sabor a limon."
   }
 ]
