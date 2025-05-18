@@ -304,8 +304,8 @@
     "name": "Michelada club",
     "category": "Cervezas",
     "quantity": null,
-    "price": 8000,
-    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "price": 9000,
+    "imageUrl": "https://hotelisabellatayrona.com/wp-content/uploads/2024/07/45203-600x837.jpg",
     "description": "Michelada de club colombia con sabor a limon."
   },
   {
@@ -314,7 +314,7 @@
     "category": "Cervezas",
     "quantity": null,
     "price": 8000,
-    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "imageUrl": "https://tienda.cristar.com.co/wp-content/uploads/2021/11/Copia-de-ORIGEN-VASOS-CERVECEROS.jpg",
     "description": "Michelada de poker con sabor a limon."
   },
   {
@@ -322,8 +322,8 @@
     "name": "Michelada corona",
     "category": "Cervezas",
     "quantity": null,
-    "price": 8000,
-    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "price": 14000,
+    "imageUrl": "https://tucocina.b-cdn.net/wp-content/uploads/2020/01/Coctel-michelada-cerveza-corona.png",
     "description": "Michelada de corona con sabor a limon."
   },
   {
@@ -331,8 +331,8 @@
     "name": "Michelada coronita",
     "category": "Cervezas",
     "quantity": null,
-    "price": 8000,
-    "imageUrl": "https://es.inshaker.com/uploads/cocktail/promo/776/medium_1542205454-Rum-with-Cranberry-Juice-_promo.jpg",
+    "price": 9000,
+    "imageUrl": "https://tucocina.b-cdn.net/wp-content/uploads/2020/01/Coctel-michelada-cerveza-corona.png",
     "description": "Michelada de coronita con sabor a limon."
   }
 ]
